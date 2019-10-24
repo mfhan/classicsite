@@ -24,6 +24,22 @@ function myToggler() {
   }
 }
 
+//////////////////////////////////////////////////////////
+
+const hamburger = document.querySelector('.fa-bars')
+const cancel = document.querySelector('.fa-times')
+
+hamburger.addEventListener('click', function () {
+  document.querySelector('.mobile-nav').style.right = '0px';
+  console.log(hamburger);
+})
+cancel.addEventListener('click', function () {
+  document.querySelector('.mobile-nav').style.right = '-50%';
+  console.log(cancel);
+})
+
+
+
 // functions fed by API and rendering into the projects and media sections:
 
 let myProjectsUrl= 'https://docs.google.com/spreadsheets/d/1JzfzPc5KeR3h1kXCp99eI-UnpKKCUpxx1rDDnS3wFsE/edit#gid=0'
